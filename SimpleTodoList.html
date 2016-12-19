@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+</head>
+
+<style type="text/javascript">
+
+var todos = [];
+
+var input = prompt("What would you like to do?");
+
+while (input !== "quit") {
+    if (input === "list") {
+        console.log(todos);
+    } else if (input === "new") {
+        var newTodo = prompt("Enter a new task!");
+        todos.push(newTodo);
+    }
+    input = prompt("What would you like to do?");
+}
+console.log("Ok, You Quit The App");
+
+</style>
+
+
+<body>
+    <h1>TODO LIST</h1>
+    <p>Enter the command below when prompted, when you are finished type "quit"...</p>
+    <ul>
+      <li>"new" - Add A Todo</li>
+      <li>"list" - View All Todos</li>
+      <li>"quit" - Quit App</li>
+    </ul>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
